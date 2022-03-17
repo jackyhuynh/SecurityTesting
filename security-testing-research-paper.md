@@ -24,13 +24,13 @@ We also need to understand major issues that cause security breaches which are s
   - Code Reviews
   - Ethical Hacking
 
-### A. The goal of Security Testing
+### A. Security Testing Goal
   -	To identify the threats in the system.
   -	To measure the potential vulnerabilities of the system.
   -	To help in detecting every possible security risk in the system.
   -	To help developers in fixing the security problems through coding.
 
-### B. Principle of Security Testing
+### B. Security Testing Principle
   -	Confidentiality
   -	Integrity
   -	Authentication
