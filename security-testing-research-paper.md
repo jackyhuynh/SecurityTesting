@@ -1,4 +1,4 @@
-# Security Testing and Cyber-Security: Simulated Man in The Middle Attack and Prevention
+# Security Testing and Cyber-Security: Use Case Simulated Man in The Middle Attack and Prevention
 
 ## Author:
 - Truc Huynh
@@ -12,18 +12,19 @@ It ensures that the software system and application are free from any threats or
 - To understand and implement good security test plans we must understand what is software quality,  
 software testing lifecycle (testing framework), and software requirements. 
 We also need to understand major issues that cause security breaches which are software failures, malware, ransomware and cybersecurity principle
+
 - Topic cover in this research:
-  - Software Quality
   - Software Testing Life Cycle (STLC/ Testing framework)
   - Software Requirements
   - Security Breaches: Errors/Faults/Failures
   - Types of Security Testing
+- I will simulate an attack on DOD website: the DOD webmail (https://sts1.auth.ecuf.deas.mil/) 
 - Testing Tools implement in this research:
   - Regression Testing
   - Automation Testing (Using Script)
   - Code Reviews
   - Ethical Hacking
-
+- 
 ### A. Security Testing Goal
   -	To identify the threats in the system.
   -	To measure the potential vulnerabilities of the system.
@@ -58,7 +59,7 @@ Design and implement a STLC is extremely important, it decides the success of a 
 
 By terminology, Software Testing Life Cycle (STLC) is a sequence of specific activities conducted during the testing 
 process to ensure software quality goals are met. STLC involves both verification and validation activities. 
-STLC consists of a series of activities carried out methodologically to help certify software products. Below is the 6 steps of a Software Testing Life Cycle.  [1]
+STLC consists of a series of activities carried out methodologically to help certify software products. Below is the 6 steps of a Software Testing Life Cycle [1].
 
 ### A. Requirement Analysis: 
 - When the Software Requirements Data is ready and shared with the stakeholders, 
@@ -147,7 +148,7 @@ the testing team starts high level analysis concerning the AUT (Application unde
   
 ## IV. Software Requirements and Requirement Analyst:
 Understand the software quality and software requirements help us design better security test plan. More over, understand software requirement allows
-developers using proper technology to design application.
+developers using proper technologies to design application.
 ### A. Software Requirements Fundamentals:
   - Definition of a Software Requirement: At its most basic, a software requirement is a
   property that must be exhibited by something in order to solve some problem in the real world
@@ -240,7 +241,7 @@ Ethical hacking is different from malicious hacking. The purpose of ethical hack
 ### G. Posture Assessment:
 It combines security scanning, ethical hacking, and risk assessments to provide an overall security posture of an organization.
 
-## V. Basic Test Suite to Prevent Man-In-The-Middle-Attack:
+## V. Test Case Designing for Preventing Man-In-The-Middle-Attack:
 - Test if users can directly access bookmarked web page without login.
 - Test if system restrict users to download the file without log in.
 - Test if previous accessed pages should not accessible after log out (i.e. Sign out and then press the Back button to access the page accessed before).
