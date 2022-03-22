@@ -7,7 +7,12 @@
 
 ## Keywords:
 
-Software Testing, Software Testing Life Cycle(STLC), Software Quality, Secure Software Testing, Secure Programing
+- Software Testing: 
+- Software Testing Life Cycle(STLC): 
+- Software Quality: 
+- Secure Software Testing: 
+- Secure Programing: 
+- Security Breaches: A security breach happen when a system fail in its security processes and cause unauthorized party access to the system. A security breach can happen by software problems (error, fault, failures), outdated security technology, ransomware, malware ...
 
 ## Abstract:
 - The paper introduce security testing principles. 
@@ -87,7 +92,7 @@ There are seven types of Security Testing:
 - Vulnerability Scanning: Vulnerability scanning is performed with the help of automated software to scan a system to detect the known vulnerability patterns.
 - Security Scanning: Security scanning is the identification of network and system weaknesses. Later on, it provides solutions for reducing these defects or risks. Security scanning can be carried out in both manual and automated ways.
 - Penetration Testing: Penetration testing is the simulation of the attack from a malicious hacker. It includes an analysis of a particular system to examine for potential vulnerabilities from a malicious hacker that attempts to hack the system.
-- Risk Assessment: In risk assessment testing security risks observed in the organization are analyzed. Risks are classified into three categories i.e. low, medium, and high. This testing endorses controls and measures to minimize the risk.
+- Risk Assessment: In risk assessment testing security risks observed in the organization are analyzed. Risks are classified into three categories (low, medium, and high). This testing endorses controls and measures to minimize the risk.
 - Security Auditing: Security auditing is an internal inspection of applications and operating systems for security defects. An audit can also be carried out via line-by-line checking of code.
 - Ethical Hacking: Ethical hacking is different from malicious hacking. The purpose of ethical hacking is to expose security flaws in the organization’s system.
 - Posture Assessment: It combines security scanning, ethical hacking, and risk assessments to provide an overall security posture of an organization.
