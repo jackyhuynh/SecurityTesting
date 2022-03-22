@@ -9,8 +9,10 @@
 ## Abstract:
 - The paper introduce security testing inrelated with cyber-security. 
 - The paper also discuss about types of security testing and 
-- Dicussing Using Software Testing Life Cycle, and Software Requirement Analyst. Using Software Testing Life Cycle, and Software Requirement Analyst as an approach to Penetration Testing
-- 
+- Dicussion of Software Testing Life Cycle (STLC), and Software Requirement Analyst.
+- Dicussion of using Software Testing Life Cycle, and Software Requirement Analyst as an approach to Penetration Testing
+- A Use case of simulating Man-In-The-Middle Attack on a system, and the tools that can be used in an Man-In-The-Middle Attack (Python, Kali Linux, Web Application)
+- Overview of Penetration Testing Methods and its related work
 
 ## Introduction:
 
