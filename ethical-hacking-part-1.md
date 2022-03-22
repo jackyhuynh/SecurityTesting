@@ -129,17 +129,12 @@ Tools that is used in Man-In-The_Middle Attack:
 
 ## Problem:
 
-In this use case, I will demonstrate how to implement man-in-the-middle-attack on a private network (system that we don't have permission to get access, and run in-house).
-A private Network can only access by devices within its building. All tools will be write from atratch and source code can be found at [13]. Please look at Pre-requirement
-section if you not sure about anything
+In this use case, I will demonstrate how to implement man-in-the-middle-attack on a private network (system that we don't have permission to get access).
+A private Network can only access by devices within its network. All tools will be write from atratch and source code can be found at [13]. Please take look at Pre-requirement
+section (and do some quick reading) if you not sure about topics that I mention in the next sections.
 
-<center>
-
-<img src="images/client-server.PNG">
-
-Images by Truc Huynh
-
-</center>
+Private Network are usually exist on a physical building with the access within that building. 
+However, it now had been extend to mobile technology with performance-critical data transfer. Which being say, cyber security engineer has more work to do.
 
 ### A. System under normal operation:
 Under normal operation, each client is connected to an access point within the organization (inside its building).
