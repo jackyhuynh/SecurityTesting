@@ -20,9 +20,6 @@ We also need to understand major issues that cause security breaches which are s
   - Types of Security Testing
 - I will simulate an attack on DOD website: the DOD webmail (https://sts1.auth.ecuf.deas.mil/) 
 - Testing Tools implement in this research:
-  - Regression Testing
-  - Automation Testing (Using Script)
-  - Code Reviews
   - Ethical Hacking
 - 
 ### A. Security Testing Goal
