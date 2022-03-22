@@ -6,6 +6,18 @@
 - [Link to Research Paper-Word File](https://ind657-my.sharepoint.com/:w:/g/personal/huyntl02_pfw_edu/EREQ8HZ5ZnpEmlgh66AqLR0Bc5Aj6R21wPnLuFMnwC4k5g?e=LA2CBC)
 
 
+## Abstract:
+- The paper introduce security testing inrelated with cyber-security. 
+- The paper also discuss about types of security testing and 
+- Dicussing Using Software Testing Life Cycle, and Software Requirement Analyst. Using Software Testing Life Cycle, and Software Requirement Analyst as an approach to Penetration Testing
+- 
+
+## Introduction:
+
+## Related Work:
+
+## Problem:
+
 ## Reference:
 - IEEE: [Advance Technology for Humanity](https://www.ieee.org/) [1]
 - ISO 9000-3: [Quality management and quality assurance standards](https://www.iso.org/standard/26364.html) [2]
