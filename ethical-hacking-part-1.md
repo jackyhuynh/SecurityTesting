@@ -7,10 +7,10 @@
 
 ## Keywords:
 
-- Software Testing: 
+- Software Testing: security testing uncovers vulnerabilities of the system and determines that the data and resources of the system are well protected
 - Software Testing Life Cycle(STLC): Software Testing Life Cycle (STLC) is a sequence of specific activities conducted during the testing 
 process to ensure software quality goals are met. STLC involves both verification and validation activities. There are 6 steps of STLC:
-Requirement Analysis, Test Planning, Test Cases Designing, Test Enviroment Setup, Test Execution.
+Requirement Analysis, Test Planning, Test Cases Designing, Test Enviroment Setup, Test Execution, Test Closure.
 - Software Quality: Computer programs, procedures, and possibly associated documentation and data pertaining to the operations of the system (IEEE).
 Four component that need to assure the quality of the software development: code, procedures, documentation, data to operating the software system (from [2])
 - Secure Software Testing: testing methods that determine software products protects data and maintains security specification as given.
@@ -18,7 +18,7 @@ Four component that need to assure the quality of the software development: code
 - Security Breaches: A security breach happen when a system fail in its security processes and cause unauthorized party access to the system. A security breach can happen by software problems (error, fault, failures), outdated security technology, ransomware, malware ...
 
 ## Abstract:
-- The paper introduce security testing principles. 
+- The paper introduces security testing principles. 
 - The paper also discuss about types of security testing.
 - The relationship between STLC, SDLC, and security testing
 - A Use case of simulating Man-In-The-Middle Attack on a system, and the tools that can be used in an Man-In-The-Middle Attack (Python, Kali Linux, Web Application Security Testing)
@@ -100,16 +100,17 @@ There are seven types of Security Testing:
 - Ethical Hacking: Ethical hacking is different from malicious hacking. The purpose of ethical hacking is to expose security flaws in the organization’s system.
 - Posture Assessment: It combines security scanning, ethical hacking, and risk assessments to provide an overall security posture of an organization.
 
-### B. Penetration Testing Pre-Requirement:
+### B. Pen Testing: Simulate Man-In-The_Middle Attack on a secure system:
+Pre requirments knowledge
 - Python Scapy Package: Scapy is a powerful Python-based interactive packet manipulation program and library. It is able to forge or decode packets of a wide number of protocols, send them on the wire, capture them, store or read them using pcap files, match requests and replies, and much more. It is designed to allow fast packet prototyping by using default values that work.
 - Kali Linux: is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering [11].
 - Cyber Security principles: Applied Cyber Security Principle to find weakness in the system (by pass filter if using same MAC address)
-- Networking Principles (MAC Address)
-- OSI Model and TCP/IP Model: Understand Layers Architecture
-- Web Aplication Structures (Client Server Model)
+- Networking Principles: Understand MAC Address, Access Point, Various Networking Devices  
+- OSI Model and TCP/IP Model: Understand Layers Architecture of OSI Model and TCP/IP Models, Understand IPV4 and IPV6
+- Web Aplication Structures: (Client Server Model)
 - Python Programming: String Manipulation, Parsing HTML, Sending & receiving HTTP requests, Netfilterqueue, Socket Programming, Data Structures, 
 
-### C. Penetration Testing Methods:
+
 - 
 
 
