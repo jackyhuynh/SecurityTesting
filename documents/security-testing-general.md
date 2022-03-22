@@ -257,7 +257,7 @@ It combines security scanning, ethical hacking, and risk assessments to provide 
 - Test if error messages doesn't contain important information.
 
 ## VI. Use Case (Man in the Middle Attack):
-In this use case I will demonstrate how to implement man in the middle attack on a system (that we are allowed to get access).
+In this use case I will demonstrate how to implement man in the middle attack on a system (that we are not allowed to get access).
 - Pre requirement:
   - Understanding of cyber-security
   - Understanding of Python Programing (automation and scripting)
