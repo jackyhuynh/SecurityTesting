@@ -13,7 +13,7 @@ Software Testing, Software Testing Life Cycle(STLC), Software Quality, Secure So
 - The paper introduce security testing principles. 
 - The paper also discuss about types of security testing.
 - The relationship between STLC, SDLC, and security testing
-- A Use case of simulating Man-In-The-Middle Attack on a system, and the tools that can be used in an Man-In-The-Middle Attack (Python, Kali Linux, Web Application)
+- A Use case of simulating Man-In-The-Middle Attack on a system, and the tools that can be used in an Man-In-The-Middle Attack (Python, Kali Linux, Web Application Security Testing)
 - Overview of Penetration Testing Methods(Pen Testing) and its related work
 
 ## Introduction:
@@ -82,31 +82,22 @@ Thus, no effective mitigation strategy should be overlooked.
 - Test if error messages doesn't contain important information.
 
 ## Related Work:
-
+### A. Types of Security Testing:
 There are seven types of Security Testing:
+- Vulnerability Scanning: Vulnerability scanning is performed with the help of automated software to scan a system to detect the known vulnerability patterns.
+- Security Scanning: Security scanning is the identification of network and system weaknesses. Later on, it provides solutions for reducing these defects or risks. Security scanning can be carried out in both manual and automated ways.
+- Penetration Testing: Penetration testing is the simulation of the attack from a malicious hacker. It includes an analysis of a particular system to examine for potential vulnerabilities from a malicious hacker that attempts to hack the system.
+- Risk Assessment: In risk assessment testing security risks observed in the organization are analyzed. Risks are classified into three categories i.e. low, medium, and high. This testing endorses controls and measures to minimize the risk.
+- Security Auditing: Security auditing is an internal inspection of applications and operating systems for security defects. An audit can also be carried out via line-by-line checking of code.
+- Ethical Hacking: Ethical hacking is different from malicious hacking. The purpose of ethical hacking is to expose security flaws in the organization’s system.
+- Posture Assessment: It combines security scanning, ethical hacking, and risk assessments to provide an overall security posture of an organization.
 
-### A. Vulnerability Scanning:
-Vulnerability scanning is performed with the help of automated software to scan a system to detect the known vulnerability patterns.
-
-### B. Security Scanning:
-Security scanning is the identification of network and system weaknesses. Later on, it provides solutions for reducing these defects or risks. Security scanning can be carried out in both manual and automated ways.
-
-### C. Penetration Testing:
-Penetration testing is the simulation of the attack from a malicious hacker. It includes an analysis of a particular system to examine for potential vulnerabilities from a malicious hacker that attempts to hack the system.
-
-### D. Risk Assessment:
-In risk assessment testing security risks observed in the organization are analyzed. Risks are classified into three categories i.e. low, medium, and high. This testing endorses controls and measures to minimize the risk.
-
-### E. Security Auditing:
-Security auditing is an internal inspection of applications and operating systems for security defects. An audit can also be carried out via line-by-line checking of code.
-
-### F. Ethical Hacking:
-Ethical hacking is different from malicious hacking. The purpose of ethical hacking is to expose security flaws in the organization’s system.
-
-### G. Posture Assessment:
-It combines security scanning, ethical hacking, and risk assessments to provide an overall security posture of an organization.
+### B. Penetration Testing Tools:
+- Python Scapy Package
 
 ## Problem:
+
+In this use case I will demonstrate how to implement man in the middle attack on a system (that we are not allowed to get access).
 
 ## Reference:
 - IEEE: [Advance Technology for Humanity](https://www.ieee.org/) [1]
