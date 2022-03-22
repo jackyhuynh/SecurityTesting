@@ -7,14 +7,20 @@
 
 
 ## Abstract:
-- The paper introduce security testing inrelated with cyber-security. 
-- The paper also discuss about types of security testing and 
+- The paper introduce security testing and cyber-security principles. 
+- The paper also discuss about types of security testing
 - Dicussion of Software Testing Life Cycle (STLC), and Software Requirement Analyst.
 - Dicussion of using Software Testing Life Cycle, and Software Requirement Analyst as an approach to Penetration Testing
 - A Use case of simulating Man-In-The-Middle Attack on a system, and the tools that can be used in an Man-In-The-Middle Attack (Python, Kali Linux, Web Application)
 - Overview of Penetration Testing Methods and its related work
 
 ## Introduction:
+- Security Testing or Software Testing Security determines that software protects data and maintains security specification as given. 
+Another word to say: "security testing uncovers vulnerabilities of the system and determines that the data and resources of the system are well protected".
+It ensures that the software system and application are free from any threats or risks that can cause a loss.
+- To understand and implement good security test plans we must understand what is software quality, software development framework (SDLC)
+software testing lifecycle (STLC), and software requirements. 
+- We also need to understand major issues that cause security breaches.
 
 ## Related Work:
 
