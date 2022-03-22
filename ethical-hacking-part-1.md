@@ -1,6 +1,7 @@
 # Security Testing and Cyber-Security: Use Case Simulated Man in The Middle Attack and Prevention
 
 ## Author:
+
 - Truc Huynh
 - Mohammed Alswairki
 - [Link to Research Paper-Word File](https://ind657-my.sharepoint.com/:w:/g/personal/huyntl02_pfw_edu/EREQ8HZ5ZnpEmlgh66AqLR0Bc5Aj6R21wPnLuFMnwC4k5g?e=LA2CBC)
@@ -18,6 +19,7 @@ Four component that need to assure the quality of the software development: code
 - Security Breaches: A security breach happen when a system fail in its security processes and cause unauthorized party access to the system. A security breach can happen by software problems (error, fault, failures), outdated security technology, ransomware, malware ...
 
 ## Abstract:
+
 - The paper introduces security testing principles. 
 - The paper also discuss about types of security testing.
 - The relationship between STLC, SDLC, and security testing
@@ -25,6 +27,7 @@ Four component that need to assure the quality of the software development: code
 - Overview of Penetration Testing Methods(Pen Testing) and its related work
 
 ## Introduction:
+
 ### A. Software Security Testing:
 - Security Testing or Software Testing Security determines that software protects data and maintains security specification as given. 
 Another word to say: "security testing uncovers vulnerabilities of the system and determines that the data and resources of the system are well protected".
@@ -52,13 +55,15 @@ Therefore, testing also has an expanded role. Software testing also has other st
 - It is often said that security testing is only a small part of secure programming [10]. In fact,  it is very difficult to find all security related problems in a software system.
 Thus, no effective mitigation strategy should be overlooked.
 
-### A. Software Security Testing Goal
+### A. Software Security Testing Goal:
+
 - To identify the threats in the system.
 - To measure the potential vulnerabilities of the system.
 - To help in detecting every possible security risk in the system.
 - To help developers in fixing the security problems through coding.
 
-### B. Software Security Testing Principle
+### B. Software Security Testing Principle:
+
 - Confidentiality
 - Integrity
 - Authentication
@@ -66,12 +71,14 @@ Thus, no effective mitigation strategy should be overlooked.
 - Availability
 - Non-repudiation
 
-### C. Major Focus Areas in Security Testing
+### C. Major Focus Areas in Security Testing:
+
 - Network Security
 - Web Application Testing (Client-side and Server-side)
 - System Security
 
 ## Test Case Designing for Security Testing:
+
 - Test if users can directly access bookmarked web page without login.
 - Test if system restrict users to download the file without log in.
 - Test if previous accessed pages should not accessible after log out (i.e. Sign out and then press the Back button to access the page accessed before).
@@ -90,6 +97,7 @@ Thus, no effective mitigation strategy should be overlooked.
 - Test if error messages doesn't contain important information.
 
 ## Related Work:
+
 ### A. Types of Security Testing:
 There are seven types of Security Testing:
 - Vulnerability Scanning: Vulnerability scanning is performed with the help of automated software to scan a system to detect the known vulnerability patterns.
@@ -100,23 +108,49 @@ There are seven types of Security Testing:
 - Ethical Hacking: Ethical hacking is different from malicious hacking. The purpose of ethical hacking is to expose security flaws in the organization’s system.
 - Posture Assessment: It combines security scanning, ethical hacking, and risk assessments to provide an overall security posture of an organization.
 
-### B. Pen Testing: Simulate Man-In-The_Middle Attack on a secure system:
-Pre requirments knowledge
+### B. Pen Testing:
+
+Simulate Man-In-The_Middle Attack on a system. Pre-requirments knowledge:
 - Python Scapy Package: Scapy is a powerful Python-based interactive packet manipulation program and library. It is able to forge or decode packets of a wide number of protocols, send them on the wire, capture them, store or read them using pcap files, match requests and replies, and much more. It is designed to allow fast packet prototyping by using default values that work.
 - Kali Linux: is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering [11].
 - Cyber Security principles: Applied Cyber Security Principle to find weakness in the system (by pass filter if using same MAC address)
 - Networking Principles: Understand MAC Address, Access Point, Various Networking Devices  
 - OSI Model and TCP/IP Model: Understand Layers Architecture of OSI Model and TCP/IP Models, Understand IPV4 and IPV6
 - Web Aplication Structures: (Client Server Model)
-- Python Programming: String Manipulation, Parsing HTML, Sending & receiving HTTP requests, Netfilterqueue, Socket Programming, Data Structures, 
+- Python Programming: String Manipulation, Parsing HTML, Sending & receiving HTTP requests, Netfilterqueue, Socket Programming, Data Structures,
 
-
-- 
-
+Tools that is used in Man-In-The_Middle Attack:
+- MAC Address Changer
+- Network Scanner
+- ARP Spoofer
+- Packet Sniffer
+- DNS Spoofer
+- File Interceptor
 
 ## Problem:
 
-In this use case I will demonstrate how to implement man in the middle attack on a system (that we are not allowed to get access).
+In this use case, I will demonstrate how to implement man-in-the-middle-attack on a private network (system that we don't have permission to get access, and run in-house).
+A private Network can only access by devices within its building. All tools will be write from atratch and source code can be found at [13]. Please look at Pre-requirement
+section if you not sure about anything
+
+<center>
+
+<img src="images/client-server.PNG">
+
+Images by Truc Huynh
+
+</center>
+
+### A. System under normal operation:
+Under normal operation, each client is connected to an access point within the organization (inside its building).
+PLease notice users can't access to the private network through the internet
+<center>
+
+<img src="images/normal-operation.PNG">
+
+Images by Truc Huynh
+
+</center>
 
 ## Reference:
 - IEEE: [Advance Technology for Humanity](https://www.ieee.org/) [1]
@@ -132,3 +166,4 @@ In this use case I will demonstrate how to implement man in the middle attack on
 - McGraw, Gary. "Application Security Testing Tools: Worth the Money?" Network Magazine, November 1, 2004.  (2004). [10b]
 - https://www.kali.org/?msclkid=ccbd3c3faa2511ecbe541363c15a4582 [11]
 - https://pypi.org/project/scapy/?msclkid=33343ba2aa2611eca8b9c3abfd8b35c1 [12]
+- https://github.com/jackyhuynh/ethical-hacking-using-python [13]
