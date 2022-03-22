@@ -47,7 +47,7 @@ We also need to understand major issues that cause security breaches which are s
 - Four component that need to assure the quality of the software development: code, procedures, documentation, data to operating the software system (from ISO 9000-3).
 - Software design best practices:
   - The Best Practices is <b>building security into Software Engineering Process</b> before design and coding.
-  - <b>Design need to be consistent</b>: Need to be an expert in cyber-security and software structure, and a beginner mind discovering new testing strategies
+  - <b>Design need to be consistent</b>: Need to be an expert in cyber-security and software structure, and a beginner mind to discover new testing strategies
 
 ## III. Software Testing Life Cycle (STLC):
 
@@ -238,7 +238,7 @@ Ethical hacking is different from malicious hacking. The purpose of ethical hack
 ### G. Posture Assessment:
 It combines security scanning, ethical hacking, and risk assessments to provide an overall security posture of an organization.
 
-## V. Test Case Designing for Preventing Man-In-The-Middle-Attack:
+## V. Test Case Designing for Security Testing:
 - Test if users can directly access bookmarked web page without login.
 - Test if system restrict users to download the file without log in.
 - Test if previous accessed pages should not accessible after log out (i.e. Sign out and then press the Back button to access the page accessed before).
