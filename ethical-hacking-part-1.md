@@ -8,10 +8,13 @@
 ## Keywords:
 
 - Software Testing: 
-- Software Testing Life Cycle(STLC): 
-- Software Quality: 
-- Secure Software Testing: 
-- Secure Programing: 
+- Software Testing Life Cycle(STLC): Software Testing Life Cycle (STLC) is a sequence of specific activities conducted during the testing 
+process to ensure software quality goals are met. STLC involves both verification and validation activities. There are 6 steps of STLC:
+Requirement Analysis, Test Planning, Test Cases Designing, Test Enviroment Setup, Test Execution.
+- Software Quality: Computer programs, procedures, and possibly associated documentation and data pertaining to the operations of the system (IEEE).
+Four component that need to assure the quality of the software development: code, procedures, documentation, data to operating the software system (from [2])
+- Secure Software Testing: testing methods that determine software products protects data and maintains security specification as given.
+- Secure Programing Practice: is the practice of developing computer software in such a way that guards against the accidental introduction of security vulnerabilities
 - Security Breaches: A security breach happen when a system fail in its security processes and cause unauthorized party access to the system. A security breach can happen by software problems (error, fault, failures), outdated security technology, ransomware, malware ...
 
 ## Abstract:
@@ -97,8 +100,18 @@ There are seven types of Security Testing:
 - Ethical Hacking: Ethical hacking is different from malicious hacking. The purpose of ethical hacking is to expose security flaws in the organization’s system.
 - Posture Assessment: It combines security scanning, ethical hacking, and risk assessments to provide an overall security posture of an organization.
 
-### B. Penetration Testing Tools:
-- Python Scapy Package
+### B. Penetration Testing Pre-Requirement:
+- Python Scapy Package: Scapy is a powerful Python-based interactive packet manipulation program and library. It is able to forge or decode packets of a wide number of protocols, send them on the wire, capture them, store or read them using pcap files, match requests and replies, and much more. It is designed to allow fast packet prototyping by using default values that work.
+- Kali Linux: is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering [11].
+- Cyber Security principles: Applied Cyber Security Principle to find weakness in the system (by pass filter if using same MAC address)
+- Networking Principles (MAC Address)
+- OSI Model and TCP/IP Model: Understand Layers Architecture
+- Web Aplication Structures (Client Server Model)
+- Python Programming: String Manipulation, Parsing HTML, Sending & receiving HTTP requests, Netfilterqueue, Socket Programming, Data Structures, 
+
+### C. Penetration Testing Methods:
+- 
+
 
 ## Problem:
 
@@ -116,3 +129,5 @@ In this use case I will demonstrate how to implement man in the middle attack on
 - Fink, G. & Bishop, M. "Property-Based Testing: A New Approach to Testing for Assurance." ACM SIGSOFT Software Engineering Notes 22, 4 (July 1997): 74-80.[9]
 - McGraw, Gary & Potter, Bruce. "Software Security Testing." IEEE Security and Privacy 2, 5 (Sept.-Oct. 2004): 81-85. [10a]
 - McGraw, Gary. "Application Security Testing Tools: Worth the Money?" Network Magazine, November 1, 2004.  (2004). [10b]
+- https://www.kali.org/?msclkid=ccbd3c3faa2511ecbe541363c15a4582 [11]
+- https://pypi.org/project/scapy/?msclkid=33343ba2aa2611eca8b9c3abfd8b35c1 [12]
