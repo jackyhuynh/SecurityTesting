@@ -295,8 +295,8 @@ Images by Truc Huynh
 
 ### B. Hacker Gain Access to The System
 Access can be gain using insider attack, malware Backdoor , Code Injector, malware Package...
-It doesn't matter how the hackers gain access to the system at this point. That can be discussed in another research paper.
-My focus is to simulate the strategy that hacker spread out the virus and control the system.
+It doesn't matter how the hackers gain access to the system at this point. My focus is to simulate the strategy that hacker spread out the virus 
+after gainning access and control the system.
 
 Hacker can use a remote devices that set up within the building, or gain control to one of the devices 
 within the organization to perform the task. They can start with one device first then access all devices.
