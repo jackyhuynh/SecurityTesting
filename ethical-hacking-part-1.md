@@ -7,11 +7,12 @@
 
 ## Keywords:
 
-Software Development
+Software Testing, Software Testing Life Cycle(STLC), Software Quality, Secure Software Testing, Secure Programing
 
 ## Abstract:
-- The paper introduce security testing. 
+- The paper introduce security testing principles. 
 - The paper also discuss about types of security testing.
+- The relationship between STLC, SDLC, and security testing
 - A Use case of simulating Man-In-The-Middle Attack on a system, and the tools that can be used in an Man-In-The-Middle Attack (Python, Kali Linux, Web Application)
 - Overview of Penetration Testing Methods(Pen Testing) and its related work
 
@@ -21,17 +22,35 @@ Software Development
 Another word to say: "security testing uncovers vulnerabilities of the system and determines that the data and resources of the system are well protected".
 It ensures that the software system and application are free from any threats or risks that can cause a loss.
 - To understand and implement good security test plans we must understand what is software quality, software development framework (SDLC)
-software testing lifecycle (STLC), and software requirements. 
+software testing lifecycle (STLC), and software requirements.
 - We also need to understand major issues that cause security breaches.
-- Security testing is often fundamentally different from traditional testing because it emphasizes what an application should not do rather than what it should do, as pointed out in [9],
+- Security-related bugs can differ from traditional bugs in a number of ways:
+  - Security testing is often fundamentally different from traditional testing because it emphasizes what an application 
+  should not do rather than what it should do, as pointed out in [9],
+  - Malicious attackers do intelligently search for vulnerabilities. If they succeed, they cause problems for other users, 
+  who may be adversely affected. Compounding the problem, malicious hackers are known to script successful attacks and distribute them.[9]
+  - Since most developers are not currently trained in secure programming practices, security analysts carry a greater 
+  burden in verifying that secure programming practices are adhered to.[9]
+  - Many security requirements can be neither refined nor dropped even if they are untestable. e.g. 
+  ”an attacker should never be able to take control of the application,” would be regarded as untestable in a traditional software development setting [9]
+- The result is that secure software development is intrinsically harder than traditional software development.
+Therefore, testing also has an expanded role. Software testing also has other strengths that can be leveraged during secure software development
+  - Testing can help confirm that the developers did not overlook some insecure programming practices.
+  - A vulnerability is usually taken more seriously if there is a known exploit for it, but developing exploits is the domain of penetration testing 
+  - Testing can be used to help identify and mitigate risks from third-party components, where development artifacts like source code and architecture diagrams are unavailable.
+  - Testing can be used to provide metrics of software insecurity and help raise the alarm when software is seriously flawed from the security standpoint.
+  - Every design artifact views the software system at a certain level of abstraction. Attackers like to find the abstractions used by developers and work their way around them. 
+  No person or group can view a software system at all possible levels of abstraction, but testing can help by perhaps finding (at least some) flaws that are not visible in the design artifacts.[9]
+- It is often said that security testing is only a small part of secure programming [10]. In fact,  it is very difficult to find all security related problems in a software system.
+Thus, no effective mitigation strategy should be overlooked.
 
-### A. Security Testing Goal
+### A. Software Security Testing Goal
 - To identify the threats in the system.
 - To measure the potential vulnerabilities of the system.
 - To help in detecting every possible security risk in the system.
 - To help developers in fixing the security problems through coding.
 
-### B. Security Testing Principle
+### B. Software Security Testing Principle
 - Confidentiality
 - Integrity
 - Authentication
@@ -41,11 +60,51 @@ software testing lifecycle (STLC), and software requirements.
 
 ### C. Major Focus Areas in Security Testing
 - Network Security
-- System Software Security
-- Client-side Application Security
-- Server-side Application Security
+- Web Application Testing (Client-side and Server-side)
+- System Security
+
+## Test Case Designing for Security Testing:
+- Test if users can directly access bookmarked web page without login.
+- Test if system restrict users to download the file without log in.
+- Test if previous accessed pages should not accessible after log out (i.e. Sign out and then press the Back button to access the page accessed before).
+- Test if the industry standard username & password rules is enforced.
+- Test if sensitive information ( passwords, ID numbers, credit card numbers, etc.) are stored as plain text. They should be encrypted and in asterix format.
+- Test if bookmarking is disabled on secure pages by default.
+- Test if source code is invisible to users.
+- Test if older version web browsers can access the app (older version web browsers does not support SSL).
+- Test if multiple attempt is being blocked.
+- Test if system completely log out current user after time out.
+- Test if users connection are stable and secure.
+- Verify that relevant information (upload, download, activities) are written to the log files and that information should be traceable.
+- Test if the SSL encryption is done correctly and verify the integrity of the information.
+- Prevent same username to log in at the same time.
+- Check if important credential update immediately.
+- Test if error messages doesn't contain important information.
 
 ## Related Work:
+
+There are seven types of Security Testing:
+
+### A. Vulnerability Scanning:
+Vulnerability scanning is performed with the help of automated software to scan a system to detect the known vulnerability patterns.
+
+### B. Security Scanning:
+Security scanning is the identification of network and system weaknesses. Later on, it provides solutions for reducing these defects or risks. Security scanning can be carried out in both manual and automated ways.
+
+### C. Penetration Testing:
+Penetration testing is the simulation of the attack from a malicious hacker. It includes an analysis of a particular system to examine for potential vulnerabilities from a malicious hacker that attempts to hack the system.
+
+### D. Risk Assessment:
+In risk assessment testing security risks observed in the organization are analyzed. Risks are classified into three categories i.e. low, medium, and high. This testing endorses controls and measures to minimize the risk.
+
+### E. Security Auditing:
+Security auditing is an internal inspection of applications and operating systems for security defects. An audit can also be carried out via line-by-line checking of code.
+
+### F. Ethical Hacking:
+Ethical hacking is different from malicious hacking. The purpose of ethical hacking is to expose security flaws in the organization’s system.
+
+### G. Posture Assessment:
+It combines security scanning, ethical hacking, and risk assessments to provide an overall security posture of an organization.
 
 ## Problem:
 
@@ -59,4 +118,5 @@ software testing lifecycle (STLC), and software requirements.
 - [API Security: The Complete Guide](https://www.neuralegion.com/blog/api-security/) [7]
 - [STLC (Software Testing Life Cycle) Phases, Entry, Exit Criteria (guru99.com)](https://www.guru99.com/software-testing-life-cycle.html) [8]
 - Fink, G. & Bishop, M. "Property-Based Testing: A New Approach to Testing for Assurance." ACM SIGSOFT Software Engineering Notes 22, 4 (July 1997): 74-80.[9]
-
+- McGraw, Gary & Potter, Bruce. "Software Security Testing." IEEE Security and Privacy 2, 5 (Sept.-Oct. 2004): 81-85. [10a]
+- McGraw, Gary. "Application Security Testing Tools: Worth the Money?" Network Magazine, November 1, 2004.  (2004). [10b]
