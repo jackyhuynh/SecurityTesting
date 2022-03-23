@@ -188,9 +188,18 @@ Images by Truc Huynh
 	- Using 'Packet_Sniffer' to read packet and data flow through the hacker interface
 	- Use the information that 'Packet Sniffer' collect to create a suitable plan for spreading the virus to other machine within the network
 - Step 4: Modify Data, spread virus
-	- Using the plan that create on step 3, 
-	- Using 'DNS Spoofer' to redirect the desitination on the computer on network (e.g. to a fake website) so that hacker can install a backdoor on other local computer.
+	- Using the plan that create on step 3 to make an attack on other computers. Depend on security structure on the network using 'DNS Spoofer' or 'File Interceptor' (or both)
+	- Using 'File Interceptor' to modify HTTP data that send over HTTP, replace a user's download request with a completely diffrent file (virus, backdoor...)
+	- Using 'DNS Spoofer' (modify data in DNS Layer) to redirect the desitination on the computer on network (e.g. to a fake website) so that hacker can install a backdoor on other local computer.
 	- Slowly spread and contain them-self, avoid detect by the network administrator, or any security system on the network
+
+<center>
+
+<img src="images/established.PNG">
+
+Images by Truc Huynh
+
+</center>
 
 - Step 5:
 	- Decide if the attack is sucess or not, make sure the attack don't create any evidence that lead to the hacker(protocal tracing)
