@@ -143,14 +143,6 @@ can be etablished just by one computer being hack, and spread out to many other 
 Under normal operation, each client is connected to an access point within the organization (inside its building).
 Please notice access to the private network only can be grant within access point within the building (wire and wireless)
 
-<center>
-
-<img src="images/normal-operation.PNG">
-
-Images by Truc Huynh
-
-</center>
-
 ### B. Hackers Gain Access to The System:
 
 Access can be gained in many ways insider attack, malware backdoor , code Injector, malware package...
@@ -163,6 +155,27 @@ Each of the devices get access by the hacker can become bots and sending out inf
 devices within the network. Some virus can contain themself, create back door, and by pass security scanner by changing its MAC 
 address or IP address. Depend on how many devices hackers want to control, they usually need a super computer to handle the task.
 
+
+
+The plan of attack is:
+- Step 1: Get Access to one computers: 
+	- Through a USB stick equipped with a custom Linux version 
+	- Enable backdoor on user's computer
+
+<center>
+
+<img src="images/normal-operation.PNG">
+
+Images by Truc Huynh
+
+</center>
+
+- Step 2: Etablished Man-In-The-Middle:
+	- Redirect the flow of packet by running 'ARP Spoofer'. 
+	- 'ARP Spoofer' will run 'Network Scanner' to get all the IP and Mac Address on the network. 
+	- Then store the result, and run 'Mac Address Changer' to change our MAC address hacking devices (USB stick or remote computer)
+to a physical MAC address of a local computer (in the private network).
+
 <center>
 
 <img src="images/access-gain.PNG">
@@ -171,22 +184,16 @@ Images by Truc Huynh
 
 </center>
 
-The plan is:
-- Step 1: Get Access to one computers: 
-	- Through a USB stick equipped with a custom Linux version 
-	- Enable backdoor on user's computer
-- Step 2: Etablished Man-In-The-Middle:
-	- Redirect the flow of packet by running 'ARP Spoofer'. 
-	- 'ARP Spoofer' will run 'Network Scanner' to get all the IP and Mac Address on the network. 
-	- Then store the result, and run 'Mac Address Changer' to change our MAC address hacking devices (USB stick or remote computer)
-to a physical MAC address of a local computer (in the private network).
 - Step 3: Gather information
 	- Using 'Packet_Sniffer' to read packet and data flow through the hacker interface
 	- Use the information that 'Packet Sniffer' collect to create a suitable plan for spreading the virus to other machine within the network
 - Step 4: Modify Data, spread virus
-	- Using the plan that create on step 3
-	- Redirect the desitination on the computer on network (e.g. to a fake website) so that hacker can install a backdoor on other local computer.
-	- Slowly spread and contain them-self, avoid detect by the administrator
+	- Using the plan that create on step 3, 
+	- Using 'DNS Spoofer' to redirect the desitination on the computer on network (e.g. to a fake website) so that hacker can install a backdoor on other local computer.
+	- Slowly spread and contain them-self, avoid detect by the network administrator, or any security system on the network
+
+- Step 5:
+	- Decide if the attack is sucess or not, make sure the attack don't create any evidence that lead to the hacker(protocal tracing)
 
 ## Reference:
 - IEEE: [Advance Technology for Humanity](https://www.ieee.org/) [1]
