@@ -140,11 +140,11 @@ Access can be gained in many ways insider attack, malware backdoor, code Injecto
 Hackers can use remote devices that are set up within the building or gain control of one of the devices within the organization to perform the task. They start with one device then spread the attack to all other devices. Each of the devices gets accessed by the hacker can become bots and send out information, or spread out the virus to other devices within the network. Some viruses can contain themselves, create a backdoor, and pass security scanners by changing their MAC address or IP address. Depending on how many devices hackers want to control, they usually need a supercomputer to handle the task.
 
 
-The plan of attack is:
+The plan of attack is. The entire plan is designed by Truc Huynh, with the idea from [14]:
+
 - Step 1: Get Access to one computer: 
   - Through a USB stick equipped with a custom Linux version.
   - Enable backdoor on user’s computer.
-
 
 <center>
 
