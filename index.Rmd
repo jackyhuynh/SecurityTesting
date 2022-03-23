@@ -1,17 +1,12 @@
 ---
-title: "Security Testing"
+title: "Security Testing and Cyber-Security: Use Case Simulated Man in The Middle Attack and Prevention"
 author: "Truc Huynh & Mohammad"
 date: "3/16/2022"
 output:
   word_document: default
   html_document: default
 ---
-# Security Testing and Cyber-Security: Use Case Simulated Man in The Middle Attack and Prevention
 
-## Author:
-
-- Truc Huynh
-- Mohammed Alswairki
 - [Link to Research Paper-Word File](https://ind657-my.sharepoint.com/:w:/g/personal/huyntl02_pfw_edu/EREQ8HZ5ZnpEmlgh66AqLR0Bc5Aj6R21wPnLuFMnwC4k5g?e=LA2CBC)
 
 ## Keywords:
