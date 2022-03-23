@@ -114,7 +114,7 @@ Simulate Man-In-The_Middle Attack on a system. Pre-requirments knowledge:
 - Python Scapy Package: Scapy is a powerful Python-based interactive packet manipulation program and library. It is able to forge or decode packets of a wide number of protocols, send them on the wire, capture them, store or read them using pcap files, match requests and replies, and much more. It is designed to allow fast packet prototyping by using default values that work.
 - Kali Linux: is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering [11].
 - Cyber Security principles: Applied Cyber Security Principle to find weakness in the system (by pass filter if using same MAC address)
-- Networking Principles: Understand MAC Address, Access Point, Various Networking Devices  
+- Networking Principles: Understand MAC Address, Access Point, Various Networking Devices, Address Resolution Protocal (ARP), Domain Name Server (DNS)
 - OSI Model and TCP/IP Model: Understand Layers Architecture of OSI Model and TCP/IP Models, Understand IPV4 and IPV6
 - Web Aplication Structures: (Client Server Model)
 - Python Programming: String Manipulation, Parsing HTML, Sending & receiving HTTP requests, Netfilterqueue, Socket Programming, Data Structures,
@@ -122,9 +122,9 @@ Simulate Man-In-The_Middle Attack on a system. Pre-requirments knowledge:
 Tools that is used in Man-In-The_Middle Attack:
 - MAC Address Changer
 - Network Scanner
-- ARP Spoofer
+- ARP Spoofer (ARP Cache Poisoning)
 - Packet Sniffer
-- DNS Spoofer
+- DNS Spoofer (DNS Cache Poisoning)
 - File Interceptor
 
 ## Problem:
@@ -135,13 +135,41 @@ section (and do some quick reading) if you not sure about topics that I mention 
 
 Private Network are usually exist on a physical building with the access within that building. 
 However, it now had been extend to mobile technology with performance-critical data transfer. Which being say, cyber security engineer has more work to do.
+Private Networks are more secure than public network, however it won't be secure if an adversary get access to one of the computer in the network. Man-In-The-Middle
+can be etablished just by one computer being hack, and spread out to many other devices within the network. Depend on the size of the attack, it cause teh  
 
 ### A. System under normal operation:
+
 Under normal operation, each client is connected to an access point within the organization (inside its building).
-PLease notice users can't access to the private network through the internet
+Please notice access to the private network only can be grant within access point within the building (wire and wireless)
+
 <center>
 
 <img src="images/normal-operation.PNG">
+
+Images by Truc Huynh
+
+</center>
+
+### B. Hackers Gain Access to The System:
+
+Access can be gained in many ways insider attack, malware backdoor , code Injector, malware package...
+I will not focus on how the hackers gain access to the system. However, my focus is to simulate the strategy that hacker
+spread out the virus after gainning access and control the system.
+
+Hacker can use a remote devices that set up within the building, or gain control to one of the devices 
+within the organization to perform the task. They start with one device then spread attack to all other devices.
+Each of the devices get access by the hacker can become bots and sending out information, or spread out the virus to other
+devices within the network. Some virus can contain themself, create back door, and by pass security scanner by changing its MAC 
+address or IP address. Depend on how many devices hackers want to control, they usually need a super computer to handle the task.
+
+The plan is:
+- Step 1: Get Access to one computers (USB stick and a custom Linux version)
+- Step 2: 
+
+<center>
+
+<img src="images/access-gain.PNG">
 
 Images by Truc Huynh
 
