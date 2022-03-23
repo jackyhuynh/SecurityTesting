@@ -96,8 +96,6 @@
 
 There are seven types of Security Testing:
 
-There are seven types of Security Testing:
-
 - Vulnerability Scanning: Vulnerability scanning is performed with the help of automated software to scan a system to detect the known vulnerability patterns.
 - Security Scanning: Security scanning is the identification of network and system weaknesses. Later on, it provides solutions for reducing these defects or risks. Security scanning can be carried out in both manual and automated ways. 
 - Penetration Testing: Penetration testing is the simulation of the attack from a malicious hacker. It includes an analysis of a particular system to examine for potential vulnerabilities from a malicious hacker that attempts to hack the system.
