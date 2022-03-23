@@ -17,8 +17,8 @@ Four component that need to assure the quality of the software development: code
 - Secure Software Testing: testing methods that determine software products protects data and maintains security specification as given.
 - Secure Programing Practice: is the practice of developing computer software in such a way that guards against the accidental introduction of security vulnerabilities
 - Security Breaches: A security breach happen when a system fail in its security processes and cause unauthorized party access to the system. A security breach can happen by software problems (error, fault, failures), outdated security technology, ransomware, malware ...
-
-## Abstract:
+- Media Access Control (MAC Address): is a permanent, physical, unique address assigned to network interface by manufacturer.
+## I. Abstract:
 
 - The paper introduces security testing principles. 
 - The paper also discuss about types of security testing.
@@ -26,7 +26,7 @@ Four component that need to assure the quality of the software development: code
 - A Use case of simulating Man-In-The-Middle Attack on a system, and the tools that can be used in an Man-In-The-Middle Attack (Python, Kali Linux, Web Application Security Testing)
 - Overview of Penetration Testing Methods(Pen Testing) and its related work
 
-## Introduction:
+## II. Introduction:
 
 ### A. Software Security Testing:
 - Security Testing or Software Testing Security determines that software protects data and maintains security specification as given. 
@@ -77,7 +77,7 @@ Thus, no effective mitigation strategy should be overlooked.
 - Web Application Testing (Client-side and Server-side)
 - System Security
 
-## Test Case Designing for Security Testing:
+## D. Test Case Designing for Security Testing:
 
 - Test if users can directly access bookmarked web page without login.
 - Test if system restrict users to download the file without log in.
@@ -96,7 +96,7 @@ Thus, no effective mitigation strategy should be overlooked.
 - Check if important credential update immediately.
 - Test if error messages doesn't contain important information.
 
-## Related Work:
+## III. Related Work:
 
 ### A. Types of Security Testing:
 There are seven types of Security Testing:
@@ -112,12 +112,12 @@ There are seven types of Security Testing:
 
 Simulate Man-In-The_Middle Attack on a system. Pre-requirments knowledge:
 - Python Scapy Package: Scapy is a powerful Python-based interactive packet manipulation program and library. It is able to forge or decode packets of a wide number of protocols, send them on the wire, capture them, store or read them using pcap files, match requests and replies, and much more. It is designed to allow fast packet prototyping by using default values that work.
-- Kali Linux: is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering [11].
-- Cyber Security principles: Applied Cyber Security Principle to find weakness in the system (by pass filter if using same MAC address)
+- Kali Linux: is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering [11].(Over 600 penetration testing tools pre-installed)
+- Cyber Security principles: Applied Cyber Security Principle to find weakness in the system (by pass filter if using same MAC address), network topology
 - Networking Principles: Understand MAC Address, Access Point, Various Networking Devices, Address Resolution Protocal (ARP), Domain Name Server (DNS)
 - OSI Model and TCP/IP Model: Understand Layers Architecture of OSI Model and TCP/IP Models, Understand IPV4 and IPV6
 - Web Aplication Structures: (Client Server Model)
-- Python Programming: String Manipulation, Parsing HTML, Sending & receiving HTTP requests, Netfilterqueue, Socket Programming, Data Structures,
+- Python Programming: String Manipulation, Parsing HTML, Sending & receiving HTTP requests, Netfilterqueue, Socket Programming, Data Structures, OOP
 
 Tools that is used in Man-In-The_Middle Attack:
 - MAC Address Changer
@@ -129,7 +129,7 @@ Tools that is used in Man-In-The_Middle Attack:
 
 ## Problem:
 
-In this use case, I will demonstrate how to implement man-in-the-middle-attack on a private network (system that we don't have permission to get access).
+In this use case, I will demonstrate how to implement man-in-the-middle-attack on a private network (private system that we don't have permission to get access).
 A private Network can only access by devices within its network. All tools will be write from atratch and source code can be found at [13]. Please take look at Pre-requirement
 section (and do some quick reading) if you not sure about topics that I mention in the next sections.
 
@@ -163,10 +163,6 @@ Each of the devices get access by the hacker can become bots and sending out inf
 devices within the network. Some virus can contain themself, create back door, and by pass security scanner by changing its MAC 
 address or IP address. Depend on how many devices hackers want to control, they usually need a super computer to handle the task.
 
-The plan is:
-- Step 1: Get Access to one computers (USB stick and a custom Linux version)
-- Step 2: 
-
 <center>
 
 <img src="images/access-gain.PNG">
@@ -174,6 +170,23 @@ The plan is:
 Images by Truc Huynh
 
 </center>
+
+The plan is:
+- Step 1: Get Access to one computers: 
+	- Through a USB stick equipped with a custom Linux version 
+	- Enable backdoor on user's computer
+- Step 2: Etablished Man-In-The-Middle:
+	- Redirect the flow of packet by running 'ARP Spoofer'. 
+	- 'ARP Spoofer' will run 'Network Scanner' to get all the IP and Mac Address on the network. 
+	- Then store the result, and run 'Mac Address Changer' to change our MAC address hacking devices (USB stick or remote computer)
+to a physical MAC address of a local computer (in the private network).
+- Step 3: Gather information
+	- Using 'Packet_Sniffer' to read packet and data flow through the hacker interface
+	- Use the information that 'Packet Sniffer' collect to create a suitable plan for spreading the virus to other machine within the network
+- Step 4: Modify Data, spread virus
+	- Using the plan that create on step 3
+	- Redirect the desitination on the computer on network (e.g. to a fake website) so that hacker can install a backdoor on other local computer.
+	- Slowly spread and contain them-self, avoid detect by the administrator
 
 ## Reference:
 - IEEE: [Advance Technology for Humanity](https://www.ieee.org/) [1]
@@ -190,3 +203,4 @@ Images by Truc Huynh
 - https://www.kali.org/?msclkid=ccbd3c3faa2511ecbe541363c15a4582 [11]
 - https://pypi.org/project/scapy/?msclkid=33343ba2aa2611eca8b9c3abfd8b35c1 [12]
 - https://github.com/jackyhuynh/ethical-hacking-using-python [13]
+- https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch/learn/lecture/10800892#overview [14]
