@@ -105,7 +105,7 @@ Simulate Man-In-The_Middle Attack on a system. Pre-requirements knowledge:
 - Understanding of OSI Model and TCP/IP Model: Understand Layers Architecture of OSI Model and TCP/IP Models, Understand IPV4 and IPV6 - Web Application Structures: (Client-Server Model) 
 - Python Programming: String Manipulation, Parsing HTML, Sending & receiving HTTP requests, Netfilterqueue, Socket Programming, Data Structures, OOP
 
-Tools that is used in Man-In-The_Middle Attack:
+## Tools that is used in Man-In-The_Middle Attack:
 
 - MAC Address Changer
 - Network Scanner
@@ -114,11 +114,15 @@ Tools that is used in Man-In-The_Middle Attack:
 - DNS Spoofer (DNS Cache Poisoning)
 - File Interceptor
 
-## Problem:
+## Senario:
 
-In this use case, I will demonstrate how to implement a man-in-the-middle-attack on a private network (a private system that we don’t have permission to get access to). A private Network can only access by devices within its network. All tools will be written from scratch and source code can be found at [13]. Please look at the Pre-requirement section if you are not sure about the topics that I mention in the next sections. The benefit of writing a script attack is that you can schedule the whole script as one and automate the process.
+- Demonstrate how to implement a man-in-the-middle-attack on a private network (or a private system that we don’t have permission to get access to). 
+- All tools will be written from scratch and source code can be found at [13].
+- The benefit of writing our own program is that hackers can automate the whole hacking process, implemented machine learning & artificial intelligence, and provide efficient source code control.
+- Private networks usually exist on a physical building with access within that building. 
+- Private Networks are considered more secure than public networks, however, they won’t be secure if an adversary gets access to one of the computers in the network. 
+- Man-In-The-Middle can be established just by one computer being hacked and spread out to many other devices within the network. 
 
-Private networks usually exist on a physical building with access within that building. However, it now had been extended to mobile technology with performance-critical data transfer. Cyber Security engineer has more work to do. Private Networks are more secure than public networks, however, they won’t be secure if an adversary gets access to one of the computers in the network. Man-In-The-Middle can be established just by one computer being hacked and spread out to many other devices within the network. Depending on the size of the attack, some can cause millions of dollars lost.
 
 ### A. System under normal operation:
 
