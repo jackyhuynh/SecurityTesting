@@ -1,5 +1,6 @@
 ---
-title: "Security Testing and Cyber-Security: Use Case Simulated Man in The Middle Attack and Prevention"
+title: 'Security Testing and Cyber-Security: Use Case Simulated Man in The Middle
+  Attack and Prevention'
 author: "Truc Huynh & Mohammed Alswairki"
 date: "3/16/2022"
 output:
