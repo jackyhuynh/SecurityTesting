@@ -4,6 +4,7 @@
 
 - Truc Huynh
 - Mohammed Alswairki
+- [Slides](https://jackyhuynh.github.io/security-testing-using-python/#(1))
 - [Link to Research Paper-Word File](https://ind657-my.sharepoint.com/:w:/g/personal/huyntl02_pfw_edu/EREQ8HZ5ZnpEmlgh66AqLR0Bc5Aj6R21wPnLuFMnwC4k5g?e=LA2CBC)
 
 ## 1. Introduction:
