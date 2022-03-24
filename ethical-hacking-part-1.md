@@ -25,8 +25,7 @@
 - A Use case of simulating Man-In-The-Middle Attack on a system, and the tools that can be used in a Man-In-The-Middle Attack (Python, Kali Linux, Web Application Security Testing)
 - Overview of Penetration Testing Methods(Pen Testing) and its related work
 
-
-## II. Introduction
+## II. Introduction to Software Testing
 
 ### A. Software Security Testing Introduction
 
@@ -188,7 +187,9 @@ Images by Truc Huynh
 - Step 5:
   - Decide if the attack is a success or not.
   - Make sure the attack doesn’t create any evidence that leads to the hacker (protocol tracing, IP Address tracing).
-  
+
+
+
 ## IV. Reference
 - [IEEE: Advance Technology for Humanity](https://www.ieee.org/) [1]
 - [ISO 9000-3: Quality management and quality assurance standards](https://www.iso.org/standard/26364.html) [2]
