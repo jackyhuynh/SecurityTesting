@@ -1,6 +1,6 @@
 ---
-title: 'Security Testing and Cyber-Security: Use Case Simulated Man in The Middle
-  Attack and Prevention'
+title: 'A Dicussion of Security Testing and Penetration Testing in Related with Cyber-Security: 
+  Use Case Simulated Man in The Middle Attack on Private Network'
 author: "Truc Huynh & Mohammed Alswairki"
 date: "3/16/2022"
 output:
