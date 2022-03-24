@@ -94,7 +94,7 @@ when the testing team perform activities to ensure the quality of the software b
 <img src="images/software-requirements.JPG">
 
 
-## 3. Software Fault and Unintended Error:
+## 3. Unintended Error:
 ### a. Software error: made by programmer
 - Syntax (grammatical) error:
 - Logic error (multiply instead of adding two operands)
