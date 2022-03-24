@@ -148,7 +148,7 @@ The plan of attack is. The entire plan is designed by Truc Huynh, with the idea 
 
 <center>
 
-<img src="images/normal-operation.PNG">
+<img src="images/normal-operation.PNG" height="200px" width="400px">
 
 Images by Truc Huynh
 
