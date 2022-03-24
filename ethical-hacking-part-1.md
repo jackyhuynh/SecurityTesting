@@ -133,18 +133,6 @@ Private networks usually exist on a physical building with access within that bu
 
 Under normal operation, each client is connected to an access point within the organization (inside its building). Please notice access to the private network only can be granted within access points within the building (wired and wireless)
 
-### B. Hackers Gain Access to The System:
-
-Access can be gained in many ways insider attack, malware backdoor, code Injector, malware package… I will not focus on how the hackers gain access to the system. However, my focus is to simulate the strategy that hackers spread out the virus after gaining access and controlling the system.
-
-Hackers can use remote devices that are set up within the building or gain control of one of the devices within the organization to perform the task. They start with one device then spread the attack to all other devices. Each of the devices gets accessed by the hacker can become bots and send out information, or spread out the virus to other devices within the network. Some viruses can contain themselves, create a backdoor, and pass security scanners by changing their MAC address or IP address. Depending on how many devices hackers want to control, they usually need a supercomputer to handle the task.
-
-
-The plan of attack is. The entire plan is designed by Truc Huynh, with the idea from [14]:
-
-- Step 1: Get Access to one computer: 
-  - Through a USB stick equipped with a custom Linux version.
-  - Enable backdoor on user’s computer.
 
 <center>
 
@@ -154,10 +142,17 @@ Images by Truc Huynh
 
 </center>
 
-- Step 2: Established Man-In-The-Middle:
-  - Redirect the flow of packet by running ‘ARP Spoofer’.
-  - ‘ARP Spoofer’ will run ‘Network Scanner’ to get all the IP and Mac addresses on the network.
-  - Then store the result, and run ‘Mac Address Changer’ to change our MAC address hacking devices (USB stick or remote computer) to a physical MAC address of a local computer (in the private network).
+### B. Hackers Gain Access to The System:
+
+Access can be gained in many ways insider attack, malware backdoor, code Injector, malware package… I will not focus on how the hackers gain access to the system. However, my focus is to simulate the strategy that hackers spread out the virus after gaining access and controlling the system.
+
+Hackers can use remote devices that are set up within the building or gain control of one of the devices within the organization to perform the task. They start with one device then spread the attack to all other devices. Each of the devices gets accessed by the hacker can become bots and send out information, or spread out the virus to other devices within the network. Some viruses can contain themselves, create a backdoor, and pass security scanners by changing their MAC address or IP address. Depending on how many devices hackers want to control, they usually need a supercomputer to handle the task.
+
+The plan of attack is. The plan is designed by Truc Huynh, with the idea from [14]:
+
+- Step 1: Get Access to one computer: 
+  - Through a USB stick equipped with a custom Linux version.
+  - Enable backdoor on user’s computer.
 
 <center>
 
@@ -166,6 +161,11 @@ Images by Truc Huynh
 Images by Truc Huynh
 
 </center>
+
+- Step 2: Established Man-In-The-Middle:
+  - Redirect the flow of packet by running ‘ARP Spoofer’.
+  - ‘ARP Spoofer’ will run ‘Network Scanner’ to get all the IP and Mac addresses on the network.
+  - Then store the result, and run ‘Mac Address Changer’ to change our MAC address hacking devices (USB stick or remote computer) to a physical MAC address of a local computer (in the private network).
 
 - Step 3: Gather information
   - Using ‘Packet_Sniffer’ to read the packet and data flow through the hacker interface.
