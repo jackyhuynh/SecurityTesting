@@ -90,7 +90,7 @@ output:
 
 # Basic Test Case for Security Testing
 
-- Test if users can directly access bookmarked web pages without login.
+- Test if users can directly access bookmarked web pages without logging in.
 - Test if the system restricts users to download the file without logging in.
 - Test if previously accessed pages should not be accessible after log out (i.e. Sign out and then press the Back button to access the page accessed before).
 - Test if the industry standard username & password rules are enforced.
