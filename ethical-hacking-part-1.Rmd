@@ -22,7 +22,7 @@ output:
 ## I. Abstract
 
 - The paper introduces security testing principles.
-- The paper further discusses types of security testing, why we need security testing, and the root cause of security breaches
+- The paper further discusses types of security testing, why we need security testing and the root cause of security breaches
 - The relationship between STLC, SDLC, and security testing
 - A Use case of simulating Man-In-The-Middle Attack on a system, and the tools that can be used in a Man-In-The-Middle Attack (Python, Kali Linux, Web Application Security Testing)
 - Overview of Penetration Testing Methods(Pen Testing) and its related work
@@ -111,7 +111,7 @@ output:
 
 ### F. Test Case Designing for Security Testing:
 
-- Test if users can directly access bookmarked web pages without log in
+- Test if users can directly access bookmarked web pages without logging in
 - Test if the system restricts users to download the file without logging in
 - Test if previously accessed pages should not be accessible after log out (i.e. Sign out and then press the Back button to access the page accessed before)
 - Test if the industry standard username & password rules are enforced
@@ -154,7 +154,7 @@ Simulate Man-In-The_Middle Attack on a system. Pre-requirements knowledge:
 - Web Application Structures: (Client-Server Model) 
 - Python Programming: String Manipulation, Parsing HTML, Sending & receiving HTTP requests, Netfilterqueue, Socket Programming, Data Structures, OOP
 
-Tools that is used in Man-In-The_Middle Attack:
+Tools are used in Man-In-The_Middle Attack:
 
 - MAC Address Changer
 - Network Scanner
@@ -165,7 +165,7 @@ Tools that is used in Man-In-The_Middle Attack:
 
 ## Problem:
 
-In this use case, I will demonstrate how to implement a man-in-the-middle-attack on a private network (a private system that we don’t have permission to get access to). A private Network can only access by devices within its network. All tools will be written from scratch and source code can be found at [13]. Please look at the Pre-requirement section if you are not sure about the topics that I mention in the next sections. The benefit of writing our own program is that hackers can automate the whole hacking process, implemented machine learning & artificial intelligence, and provide efficient source code control
+In this use case, I will demonstrate how to implement a man-in-the-middle-attack on a private network (a private system that we don’t have permission to get access to). A private Network can only access by devices within its network. All tools will be written from scratch and source code can be found at [13]. Please look at the Pre-requirement section if you are not sure about the topics that I mention in the next sections. The benefit of writing our program is that hackers can automate the whole hacking process, implemented machine learning & artificial intelligence, and provide efficient source code control
 
 Private networks usually exist on a physical building with access within that building. However, it now had been extended to mobile technology with performance-critical data transfer. Cyber Security engineer has more work to do. Private Networks are more secure than public networks, however, they won’t be secure if an adversary gets access to one of the computers in the network. Man-In-The-Middle can be established just by one computer being hacked and spread out to many other devices within the network. Depending on the size of the attack, some can cause millions of dollars lost
 
