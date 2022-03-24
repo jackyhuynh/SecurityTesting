@@ -49,7 +49,7 @@ output:
 
 - Hackers take advantage of weak security to gain their benefits.
 - Hackers create opportunities so that they can hack into the applications or systems.
-- Intended action are punished by federal law (10 to 20 years)
+- Intended actions are punished by federal law (10 to 20 years)
 
 #### 3. Hacker Motivation:
 
@@ -63,6 +63,7 @@ output:
 - Taking personal revenge
 - Causing harm for personal enjoyment
 - Mitigating cyber threats
+
 
 
 ### B. Software Security Testing Introduction
@@ -227,6 +228,13 @@ Images by Truc Huynh
 - Step 5:
   - Decide if the attack is a success or not
   - Make sure the attack doesn’t create any evidence that leads to the hacker (protocol tracing, IP Address tracing)
+
+## V. Security Practices:
+- Build security into Software Engineering Process before the software design. Implement security testing on every step of SDLC. E.g Security Development Microsoft Lifecycle (SDL)
+- Applied all testing methods to make sure we are secure
+- Working with developer team to implement secure programing principles that are industry standards if possible.
+- Develop security methods to prevent insider attacks and outsider attacks (AWS Share Model)
+
   
 ## IV. Reference
 - [IEEE: Advance Technology for Humanity](https://www.ieee.org/) [1]
