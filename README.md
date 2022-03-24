@@ -1,14 +1,17 @@
 # Security Testing
 
 ## Author:
+
 - Truc Huynh
 - Mohammed Alswairki
 - [Link to Research Paper-Word File](https://ind657-my.sharepoint.com/:w:/g/personal/huyntl02_pfw_edu/EREQ8HZ5ZnpEmlgh66AqLR0Bc5Aj6R21wPnLuFMnwC4k5g?e=LA2CBC)
 
 ## 1. Introduction:
+
 - Knowledge Requirement: Cybersecurity, Industry Standard Infrastructure, Software Development, Software Construction, Software Testing, Security Testing
 - Level can be range from easy to expert depend on skill levels
 - Types of Security Testing
+
 ```
 - Vulnerability Scanning
 - Penetration Testing (Ethical Hacking)
@@ -19,23 +22,29 @@
 - Risk Assessment
 - Security Posture Assessment
 ```
+
 - Testing vs. Validation
 
-###a. Best Practices:
+### a. Best Practices:
+
 - <b>Build security into Software Engineering Process</b> -> before design need to
 implement this
 - Check the consistency of the software
 - Test everything to make sure we are secure
 - Working with developer team to implement server structures that are industry standards (AWS, Azure) if possible.
+
 ```
 	- The benefit of implement the security they already built in the system and implement it
 ```
+
 - Develop security methods to prevent insider attack and outsider attack
+
 ```
 	- An insider attack is a malicious attack on a net work or authorized system cause by an authrized person (admin)
 ```
 
-###b. Test Plan for Security Testing
+### b. Test Plan for Security Testing
+
 Functional Testing and Non-Functional Testing of Client (password salting, user login page, encrypt user information, the choice to hide password...)
 
 Security Structure of AWS Cloud
@@ -58,16 +67,19 @@ and using IAM tools to apply the appropriate permissions
 ```
 
 
-## Introduction:
-### Software Security Testing:
+## 2. Introduction to Software Security Testing:
+### a. Software Security Testing:
+
 - Security Testing or Software Testing Security determines that software protects data and maintains security specification as given.
 - Security testing uncovers vulnerabilities of the sysytem and determines that the data and resources of the system are safe.
 
-### Software Quality:
+### b. Software Quality:
+
 - Computer programs, procedures, and possibly associated documentation and data pertaining to the operations of the system (IEEE)
 - Four component that need to assure the quality of the software development: code, procedures, documentation, data to poerating the software system (from ISO 9000-3).
 
-### Software Testing Life Cycle (Testing Framework):
+### c. Software Testing Life Cycle (Testing Framework):
+
 when the testing team perform activities to ensure the quality of the software by steps. That process is called Software testing life cycle (STLC)
 - Requirement Analysis: When the SRD is ready and shared with the stakeholders, the testing team starts high level analysis concerning the AUT (Application under Test).
 - Test Planning: plans the strategy and approach.
@@ -77,32 +89,30 @@ when the testing team perform activities to ensure the quality of the software b
 - Test Closure: Once testing is completed, matrix, reports, results are documented
 (Retrieved from 4)
 
-### Software Requirements:
+### d. Software Requirements:
+
 <img src="images/software-requirements.JPG">
 
-# Software Faults
 
-## Unintended Error:
-### Software error: made by programmer
+## 3. Software Fault and Unintended Error:
+### a. Software error: made by programmer
 - Syntax (grammatical) error:
 - Logic error (multiply instead of adding two operands)
 
-### Software Fault:
+### b. Software Fault:
 - All software errors may not cause software faults
 - That part of the software may not be executed
 
-### Software Failures:
+### c. Software Failures:
 - A software fault becomes a software failure when/if it is activated.
-- Faults may be found in the software due to the way the software is
-executed or
-- Other constraints on the software’s execution, such as execution
-options.
+- Faults may be found in the software due to the way the software is executed.
+- Other constraints on the software’s execution, such as execution options.
 
-## Intended Action:
+## 4. Intended Action:
 - Hackers take advantage of weak security to gain their benefits.
 - Hackers create opportunities so that they can hack in the application (man-in-the-middle attack)
 
-## Hacker Motivation:
+## 5. Hacker Motivation:
 - Achieving Financial Gains
   - steal credit cards information
   - misusing data (apply for loans, cars, credit cards)
