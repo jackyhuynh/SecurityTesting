@@ -136,7 +136,7 @@ Under normal operation, each client is connected to an access point within the o
 
 <center>
 
-<img src="images/normal-operation.PNG" height="500px" width="800px">
+<img src="images/normal-operation.PNG" height="450px" width="800px">
 
 Images by Truc Huynh
 
@@ -156,7 +156,7 @@ The plan of attack is. The plan is designed by Truc Huynh, with the idea from [1
 
 <center>
 
-<img src="images/access-gain.PNG" height="500px" width="800px">
+<img src="images/access-gain.PNG" height="450px" width="800px">
 
 Images by Truc Huynh
 
@@ -179,7 +179,7 @@ Images by Truc Huynh
 
 <center>
 
-<img src="images/established.PNG" height="500px" width="800px">
+<img src="images/established.PNG" height="450px" width="800px">
 
 Images by Truc Huynh
 
