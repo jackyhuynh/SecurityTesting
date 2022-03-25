@@ -1,5 +1,5 @@
 ---
-title: 'A Dicussion of Security Testing and Penetration Testing in Related with Cyber-Security: 
+title: 'A Discussion of Security Testing and Penetration Testing in Related with Cyber-Security: 
   Use Case Simulated Man in The Middle Attack on a Private Network'
 author: "Truc Huynh and Mohammed Alswairki"
 date: "3/23/2022"
@@ -79,7 +79,7 @@ output:
 - To help in detecting every possible security risk in the system
 - To help developers in fixing the security problems through coding
 
-# Software Security Testing Principle:
+# Software Security Testing Principle
 
 - Confidentiality
 - Integrity
