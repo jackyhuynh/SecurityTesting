@@ -16,17 +16,42 @@
 
 ## Solution:
 
+
+Tools are used in Man-In-The_Middle Attack:
+
+- MAC Address Changer
+- Network Scanner
+- ARP Spoofer (ARP Cache Poisoning)
+- Packet Sniffer
+- DNS Spoofer (DNS Cache Poisoning)
+- File Interceptor
+
+### 1. Enviroment:
+- Perform Man-In-The-Middle (MITM) attack on a virtual private network 
+- Etablished by using VM Ware
+- Hardware: 
+	- PC 64 bits, Intel Core i7 10th Gen, 36 GB of ram
+- Software: 
+	- Microsoft Window 10 (host)
+	- VM Ware Sphere (or free version)
+	- Kali Linux (free)
 ## Results:
 
 ## Conclusion/Future work
-
-## Reference:
-- IEEE: [Advance Technology for Humanity](https://www.ieee.org/) [1]
-- ISO 9000-3: [Quality management and quality assurance standards](https://www.iso.org/standard/26364.html) [2]
-- SWEBOK V3.0: [Guide to the Software Engineering Body of Knowledge](https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf) [3]
+There are monitoring 
+## IV. Reference
+- [IEEE: Advance Technology for Humanity](https://www.ieee.org/) [1]
+- [ISO 9000-3: Quality management and quality assurance standards](https://www.iso.org/standard/26364.html) [2]
+- [SWEBOK V3.0: Guide to the Software Engineering Body of Knowledge](https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf) [3]
 - [Tutorial Point: STLC Tutorial](https://www.tutorialspoint.com/stlc/index.htm) [4]
 - [Software Testing | Security Testing](https://www.geeksforgeeks.org/software-testing-security-testing/?ref=lbp) [5]
 - [Security Testing: Types, Tools, and Best Practices](https://www.neuralegion.com/blog/security-testing/) [6]
 - [API Security: The Complete Guide](https://www.neuralegion.com/blog/api-security/) [7]
 - [STLC (Software Testing Life Cycle) Phases, Entry, Exit Criteria (guru99.com)](https://www.guru99.com/software-testing-life-cycle.html) [8]
-
+- Fink, G. & Bishop, M. "Property-Based Testing: A New Approach to Testing for Assurance." ACM SIGSOFT Software Engineering Notes 22, 4 (July 1997): 74-80.[9]
+- McGraw, Gary & Potter, Bruce. "Software Security Testing." IEEE Security and Privacy 2, 5 (Sept.-Oct. 2004): 81-85. [10a]
+- McGraw, Gary. "Application Security Testing Tools: Worth the Money?" Network Magazine, November 1, 2004.  (2004). [10b]
+- [Kali Linux](https://www.kali.org/?msclkid=ccbd3c3faa2511ecbe541363c15a4582) [11]
+- [Python Scapy Package](https://pypi.org/project/scapy/?msclkid=33343ba2aa2611eca8b9c3abfd8b35c1) [12]
+- [Truc Huynh: Ethical Hacking Using Python](https://github.com/jackyhuynh/ethical-hacking-using-python) [13]
+- [Udemy: Learn Python and Ethical Hacking from Scratch](https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch/learn/lecture/10800892#overview) [14]
