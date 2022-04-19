@@ -191,11 +191,23 @@ Images by Truc Huynh
 
 # Execution Diagram
 
-Orders of execution
+Execution order of Tools
 
 <center>
 
 <img src="images/execute-diagram.PNG">
+
+Images by Truc Huynh
+
+</center>
+
+# Steps Diagram
+
+Steps Diagram
+
+<center>
+
+<img src="images/step-diagram.PNG">
 
 Images by Truc Huynh
 
@@ -210,10 +222,46 @@ Images by Truc Huynh
   - ‘ARP Spoofer’ will run ‘Network Scanner’ to get all the IP and Mac addresses on the network and store the result 
   - Finally run ‘Mac Address Changer’ to change our MAC address hacking devices to a physical MAC address of a local computer
 
+<center>
+
+<img src="images/arp-table.PNG">
+
+Images by Truc Huynh
+
+</center>
+
 # Step 3: Gather information
   - Using ‘Packet_Sniffer’ to read the packet and data flow through the hacker interface.
   - Use the information that ‘Packet Sniffer’ collect to create a suitable plan for spreading the virus to another machine within the network
   - Can be done with AI and ML (monitor the frequency of the one user visit one website)
+
+<center>
+
+<img src="images/capture-username-password.JPG">
+
+Images by Truc Huynh
+
+</center>
+
+# Step 3: Gather information (cont.)
+
+<center>
+
+<img src="images/capture-username-password-2.JPG">
+
+Images by Truc Huynh
+
+</center>
+
+# Packet Sniffing Architecture
+
+<center>
+
+<img src="images/SNIFFING.PNG">
+
+Images by Truc Huynh
+
+</center>
 
 # Step 4 Modify Data, spread virus
   - Using the plan that creates on step 3 to attack other computers. 
@@ -225,7 +273,13 @@ Images by Truc Huynh
   - Slowly spread and contain them-self, avoid detection by the network administrator, or any security system on the network
   - Step 4 can be enhanced with machine learning and decision making algorithm.
 
+<center>
 
+<img src="images/modifying.PNG">
+
+Images by Truc Huynh
+
+</center>
 
 
 
