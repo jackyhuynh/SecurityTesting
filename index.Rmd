@@ -35,10 +35,7 @@ output:
 
 # Hacker Motivation
 
-- Achieving financial gains:
-  - steal credit cards information
-  - misusing data (apply for loans, cars, credit cards)
-  - selling data on dark-webs
+- Achieving financial gains
 - Carrying out political agendas
 - Performing corporate espionage
 - Proving a point (Hacktivist)
@@ -88,30 +85,6 @@ output:
 - Availability
 - Non-repudiation
 
-# Basic Test Case for Security Testing
-
-- Test if users can directly access bookmarked web pages without logging in.
-- Test if the system restricts users to download the file without logging in.
-- Test if previously accessed pages should not be accessible after log out (i.e. Sign out and then press the Back button to access the page accessed before).
-- Test if the industry standard username & password rules are enforced.
-- Test if sensitive information (passwords, ID numbers, credit card numbers, etc.) is stored as plain text. They should be encrypted and in Asterix format.
-- Test if bookmarking is disabled on secure pages by default.
-- Test if source code is invisible to users.
-- Test if older version web browsers can access the app (older version web browsers do not support SSL).
-- Retrieved from [6]
-
-# Basic Test Case for Security Testing (cont.)
-
-- Test if multiple attempts are being blocked
-- Test if the system completely logs out the current user after time out
-- Test if the user’s connection is stable and secure
-- Verify that relevant information (upload, download, activities) are written to the log files and that information should be traceable
-- Test if the SSL encryption is done correctly and verifies the integrity of the information
-- Prevent the same username to log in at the same time
-- Check if important credentials are updated immediately
-- Test if error messages don’t contain important information
-- Retrieved from [6]
-
 # Types of Security Testing
 
 - Vulnerability Scanning: 
@@ -156,14 +129,35 @@ output:
 # Senario
 
 - Demonstrate how to implement a man-in-the-middle-attack on a private network (or a private system that we don’t have permission to get access to). 
-- All tools will be written from scratch and source code can be found at [13].
+- All tools will be written from scratch [13] using Python Scapy and Kali Linux.
 - The benefit of writing our own hacking tools is that hackers can automate the whole hacking process, implemented machine learning & artificial intelligence, and provide efficient source code control
 - Private networks usually exist on a physical building with access within that building
-- Private Networks are considered more secure than public networks, however, they won’t be secure if an adversary gets access to one of the computers in the network
-- Man-In-The-Middle can be established just by one computer being hacked and spread out to many other devices within the network 
 
 
-# System Under Normal Operation
+# How Hackers Gain Access to The System
+
+- Access can be gained in many ways: 
+  - insider attack, 
+  - malware backdoor, 
+  - code Injector, 
+  - malware package
+- The focus is to simulate the strategy that hackers spread out the virus after gaining access and controlling the system
+
+# Hacking Plans
+
+- Use remote devices that are set up within the building or gain control of one of the devices within the organization to perform the task
+- Starting with one device then spread the attack to all other devices
+- Each of the devices gets accessed by the hacker can become bots and send out information, or spread out the virus to other devices within the network
+- Some viruses can contain themselves, create a backdoor, and pass security scanners by changing their MAC address or IP address
+
+# Hacking Plan Steps
+- Step 1 Get Access to one computer
+- Step 2 Established Man-In-The-Middle
+- Step 3 Gather information
+- Step 4 Modify Data, spread virus
+- Step 5 Evaluation
+
+# Diagram of System Under Normal Operation
 
 - Under normal operation, each client is connected to an access point within the organization (inside its building). Please notice access to the private network only can be granted within access points within the building (wired and wireless)
 
@@ -175,28 +169,7 @@ Images by Truc Huynh
 
 </center>
 
-# Hackers Gain Access to The System
-
-- Access can be gained in many ways insider attack, malware backdoor, code Injector, malware package
-- The focus is to simulate the strategy that hackers spread out the virus after gaining access and controlling the system
-- Use remote devices that are set up within the building or gain control of one of the devices within the organization to perform the task
-- Starting with one device then spread the attack to all other devices
-- Each of the devices gets accessed by the hacker can become bots and send out information, or spread out the virus to other devices within the network
-- Some viruses can contain themselves, create a backdoor, and pass security scanners by changing their MAC address or IP address
-- Depending on how many devices hackers want to control, they usually need a supercomputer to handle the task
-
-# Hacking Plan
-
-- Step 1: Get Access to one computer: 
-  - Through a USB stick equipped with a custom Linux version
-  - Enable backdoor on user’s computer
-
-- Step 2: Established Man-In-The-Middle:
-  - Redirect the flow of packet by running ‘ARP Spoofer’
-  - ‘ARP Spoofer’ will run ‘Network Scanner’ to get all the IP and Mac addresses on the network
-  - Then store the result, and run ‘Mac Address Changer’ to change our MAC address hacking devices (USB stick or remote computer) to a physical MAC address of a local computer (in the private network)
-
-# Hacking Plan (cont.)
+# Diagram of Access-gain (Step 1)
 
 <center>
 
@@ -206,20 +179,7 @@ Images by Truc Huynh
 
 </center>
 
-# Hacking Plan (cont.)
-
-- Step 3: Gather information
-  - Using ‘Packet_Sniffer’ to read the packet and data flow through the hacker interface.
-  - Use the information that ‘Packet Sniffer’ collect to create a suitable plan for spreading the virus to another machine within the network
-  - Can be done with AI and ML (monitor the frequency of the one user visit one website)
-- Step 4: Modify Data, spread virus
-  - Using the plan that creates on step 3 to attack other computers. 
-  - Depend on security structure on the network using ‘DNS Spoofer’ or ‘File Interceptor’ (or both)
-  - Using ‘File Interceptor’ to modify HTTP data that send over HTTP, replace a user’s download request with a completely different file (virus, backdoor…)
-  - Using ‘DNS Spoofer’ (modify data in DNS Layer) to redirect the destination on the computer on the network (e.g. to a fake website) so that the hacker can install a backdoor on another local computer
-  - Slowly spread and contain them-self, avoid detection by the network administrator, or any security system on the network
-
-# Hacking Plan (cont.)
+# Diagram of Established Man-In-The-Middle (Step 2)
 
 <center>
 
@@ -229,9 +189,47 @@ Images by Truc Huynh
 
 </center>
 
-# Hacking Plan (cont.)
+# Execution Diagram
 
-- Step 5:
+Orders of execution
+
+<center>
+
+<img src="images/execute-diagram.PNG">
+
+Images by Truc Huynh
+
+</center>
+
+# Step 1: Get Access to one computer: 
+  - Through a USB stick equipped with a custom Linux version, physically plug in
+  - Enable backdoor on user’s computer
+
+# Step 2: Established Man-In-The-Middle:
+  - Redirect the flow of packet by running ‘ARP Spoofer’
+  - ‘ARP Spoofer’ will run ‘Network Scanner’ to get all the IP and Mac addresses on the network and store the result 
+  - Finally run ‘Mac Address Changer’ to change our MAC address hacking devices to a physical MAC address of a local computer
+
+# Step 3: Gather information
+  - Using ‘Packet_Sniffer’ to read the packet and data flow through the hacker interface.
+  - Use the information that ‘Packet Sniffer’ collect to create a suitable plan for spreading the virus to another machine within the network
+  - Can be done with AI and ML (monitor the frequency of the one user visit one website)
+
+# Step 4 Modify Data, spread virus
+  - Using the plan that creates on step 3 to attack other computers. 
+  - Depend on security structure on the network using ‘DNS Spoofer’ or ‘File Interceptor’ (or both)
+  - Using ‘File Interceptor’ to modify HTTP data that send over HTTP, replace a user’s download request with a completely different file (virus, backdoor…)
+  - Using ‘DNS Spoofer’ (modify data in DNS Layer) to redirect the destination on the computer on the network (e.g. to a fake website) so that the hacker can install a backdoor on another local computer
+  
+# Step 4 (cont.)
+  - Slowly spread and contain them-self, avoid detection by the network administrator, or any security system on the network
+  - Step 4 can be enhanced with machine learning and decision making algorithm.
+
+
+
+
+
+#  Step 5 Evaluation:
   - Decide if the attack is a success or not.
   - Make sure the attack doesn’t create any evidence that leads to the hacker (protocol tracing, IP Address tracing).
   
